@@ -13,10 +13,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "<testworldskill>"
+    bucket         = "testworldskill"
     key            = "terraform/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "<testtable>"
+    dynamodb_table = "testtable"
   }
 }
